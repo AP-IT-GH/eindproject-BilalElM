@@ -18,6 +18,7 @@ public class CarController : MonoBehaviour
     private float brakeforce;
     private bool isbreaking;
     private float currentSteerAngle;
+    private float rotationSpeed = 10000f;
 
 
     [SerializeField] private float motorForce;
@@ -40,6 +41,9 @@ public class CarController : MonoBehaviour
         HandleMotor();
         HandleSteering();
         UpdateWheels();
+        // Rotatie van het stuur
+        RotateWheel();
+
     }
 
     public void GetInput()
@@ -89,6 +93,29 @@ public class CarController : MonoBehaviour
         wheel.GetWorldPose(out position, out rotation);
         wheelTransform.rotation = rotation;
         wheelTransform.position = position;
+    }
+    private void RotateWheel()
+    {
+        // Roteer het stuurobject naar links of rechts
+        float wheelRotation = horizontalInput * rotationSpeed * Time.deltaTime;
+        // Hier moet je de juiste naam invullen van het stuurobject in de scene
+        GameObject wheelObject = GameObject.Find("sport_car_1_steering_wheel");
+
+        if (wheelObject != null)
+        {
+            // Haal de huidige rotatie van het stuurobject op
+            Vector3 currentRotation = wheelObject.transform.localEulerAngles;
+
+            // Bereken de nieuwe rotatie op basis van het input en snelheid
+            Vector3 desiredRotation = new Vector3(currentRotation.x, currentRotation.y, wheelRotation);
+
+            // Pas de rotatie van het stuurobject aan
+            wheelObject.transform.localEulerAngles = desiredRotation;
+        }
+        else
+        {
+            Debug.LogWarning("Stuurobject niet gevonden!");
+        }
     }
 
     void Start()

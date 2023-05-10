@@ -293,7 +293,7 @@ MonoBehaviour:
   rb: {fileID: 1476811078}
   newCenterOfMass: {x: 0, y: 0, z: 0}
   startPosition: {fileID: 0}
-  motorForce: 400
+  motorForce: 2000
   maxSteerAngle: 30
   Wheel_01: {fileID: 1934075332}
   Wheel_02: {fileID: 1773910112}
