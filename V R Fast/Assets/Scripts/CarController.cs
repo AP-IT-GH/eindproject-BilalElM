@@ -15,7 +15,7 @@ public class CarController : MonoBehaviour
 
     private float horizontalInput;
     private float verticalInput;
-    private float brakeforce;
+    [SerializeField] private float brakeforce;
     private bool isbreaking;
     private float currentSteerAngle;
     private float rotationSpeed = 10000f;
@@ -61,7 +61,7 @@ public class CarController : MonoBehaviour
         Wheel_03.motorTorque = verticalInput * motorForce;
 
         //remmen
-        brakeforce = isbreaking ? 3000f : 0f;
+        brakeforce = isbreaking ? 10000f : 0f;
         Wheel_01.brakeTorque = brakeforce;
         Wheel_02.brakeTorque = brakeforce;
         Wheel_03.brakeTorque = brakeforce;
