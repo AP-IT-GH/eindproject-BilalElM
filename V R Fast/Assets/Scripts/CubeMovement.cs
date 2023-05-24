@@ -13,7 +13,7 @@ public class CubeMovement : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         // Calculate the direction vector
-        Vector3 direction = new Vector3(horizontalInput, 0f, verticalInput);
+        Vector3 direction = new Vector3(-verticalInput, 0f, horizontalInput);
 
         // Normalize the direction vector to maintain consistent speed in all directions
         direction.Normalize();
@@ -22,4 +22,6 @@ public class CubeMovement : MonoBehaviour
         transform.Translate(direction * speed * Time.deltaTime);
     }
 }
+
+
 
