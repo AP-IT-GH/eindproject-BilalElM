@@ -14,7 +14,7 @@ public class CarController : MonoBehaviour
 
     private float horizontalInput;
     private float verticalInput;
-    [SerializeField] private float brakeForce = 100000f;
+    [SerializeField] private float brakeForce = 90000f;
     [SerializeField] private bool isBraking;
     private float currentSteerAngle;
     private float rotationSpeed = 10000f;
