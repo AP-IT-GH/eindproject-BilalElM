@@ -5,7 +5,7 @@ using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 
-public class CarController : Agent
+public class CarController : MonoBehaviour
 {
     private const string HORIZONTAL = "Horizontal";
     private const string VERTICAL = "Vertical";

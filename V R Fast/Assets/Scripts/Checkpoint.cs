@@ -20,7 +20,7 @@ public class Checkpoint : MonoBehaviour
                 lastCheckpointIndex = checkpointIndex;
                 HideMissedCheckpointCanvas(); // Hide the "Wrong Checkpoint" canvas if shown
             }
-            else if (checkpointIndex == 0/** && lastCheckpointIndex == 2*/) // Check if this is checkpoint 1 after passing through checkpoint 2
+            else if (checkpointIndex == 0 && lastCheckpointIndex == 2) // Check if this is checkpoint 1 after passing through checkpoint 2
             {
                 Debug.Log("Checkpoint 1 triggered!");
                 lastCheckpointIndex = checkpointIndex;
