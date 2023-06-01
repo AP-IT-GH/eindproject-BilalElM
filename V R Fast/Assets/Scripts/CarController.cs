@@ -4,30 +4,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
+using System.Diagnostics;
 
 public class CarController : MonoBehaviour
 {
-    private const string HORIZONTAL = "Horizontal";
-    private const string VERTICAL = "Vertical";
+    public const string HORIZONTAL = "Horizontal";
+    public const string VERTICAL = "Vertical";
 
     public Rigidbody rb;
     public Vector3 newCenterOfMass;
     public Transform startPosition;
 
-    private float horizontalInput;
-    private float verticalInput;
-    [SerializeField] private float brakeForce = 90000f;
-    [SerializeField] private bool isBraking;
-    private float currentSteerAngle;
-    private float rotationSpeed = 10000f;
+    public float horizontalInput;
+    public float verticalInput;
+    [SerializeField] public float brakeForce = 90000f;
+    [SerializeField] public bool isBraking;
+    public float currentSteerAngle;
+    public float rotationSpeed = 10000f;
 
-    [SerializeField] private float motorForce;
-    [SerializeField] private float maxSteerAngle;
+    [SerializeField] public float motorForce;
+    [SerializeField] public float maxSteerAngle;
 
     public List<WheelCollider> wheels;
     public List<Transform> wheelTransforms;
 
-    private void Start()
+    public void Start()
     {
         rb.centerOfMass = newCenterOfMass;
 
@@ -43,7 +44,7 @@ public class CarController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    public void FixedUpdate()
     {
         GetInput();
         HandleMotor();
@@ -59,7 +60,7 @@ public class CarController : MonoBehaviour
         isBraking = Input.GetKey(KeyCode.Space);
     }
 
-    private void HandleMotor()
+    public void HandleMotor()
     {
         float motorTorque = verticalInput * motorForce;
 
@@ -70,7 +71,7 @@ public class CarController : MonoBehaviour
         }
     }
 
-    private void HandleSteering()
+    public void HandleSteering()
     {
         currentSteerAngle = maxSteerAngle * horizontalInput;
 
@@ -85,7 +86,7 @@ public class CarController : MonoBehaviour
         wheels[3].brakeTorque = isBraking ? brakeForce : 0f;
     }
 
-    private void UpdateWheels()
+    public void UpdateWheels()
     {
         for (int i = 0; i < wheels.Count; i++)
         {
@@ -93,7 +94,7 @@ public class CarController : MonoBehaviour
         }
     }
 
-    private void UpdateSingleWheel(WheelCollider wheel, Transform wheelTransform)
+    public void UpdateSingleWheel(WheelCollider wheel, Transform wheelTransform)
     {
         Vector3 position;
         Quaternion rotation;
@@ -102,7 +103,7 @@ public class CarController : MonoBehaviour
         wheelTransform.position = position;
     }
 
-    private void RotateWheel()
+    public void RotateWheel()
     {
         float wheelRotation = horizontalInput * rotationSpeed * Time.deltaTime;
         GameObject wheelObject = GameObject.Find("sport_car_1_steering_wheel");
@@ -115,7 +116,7 @@ public class CarController : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Stuurobject niet gevonden!");
+            //Debug.LogWarning("Stuurobject niet gevonden!");
         }
     }
 }
