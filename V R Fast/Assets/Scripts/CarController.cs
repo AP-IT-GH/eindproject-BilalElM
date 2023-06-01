@@ -2,8 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.MLAgents;
+using Unity.MLAgents.Sensors;
 
-public class CarController : MonoBehaviour
+public class CarController : Agent
 {
     private const string HORIZONTAL = "Horizontal";
     private const string VERTICAL = "Vertical";
