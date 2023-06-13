@@ -3,16 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Checkpoint
+  - Wall
+  - Goel
+  - Goal
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - agents
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Checkpoint
   - 
   - 
   - 
