@@ -62,8 +62,60 @@ public class AIAgent : Agent
         RotateWheel();
 
         // Set a reward or penalty based on the car's behavior
-        // ...
+        SetReward(GetReward());
+
+        // Check for termination conditions and end the episode if necessary
+        if (HasReachedTerminationCondition())
+        {
+            if (GetCumulativeReward() > 0f)
+            {
+                // Positive reward, end episode with success
+                EndEpisode();
+            }
+            else
+            {
+                // Negative reward, end episode with failure
+                EndEpisode();
+            }
+        }
     }
+    private bool HasReachedTerminationCondition()
+    {
+        // Define your termination conditions here
+        // Return true if the episode should end, otherwise false
+
+        return false; // Placeholder condition, replace with actual implementation
+    }
+
+    public void Heuristic(float[] actionsOut)
+    {
+        // Implement a heuristic method for controlling the car manually
+        actionsOut[0] = Input.GetAxis(HORIZONTAL);
+        actionsOut[1] = Input.GetAxis(VERTICAL);
+        actionsOut[2] = Input.GetKey(KeyCode.Space) ? 1f : 0f;
+    }
+
+    private float GetReward()
+    {
+        // Define your reward and penalty logic based on the car's behavior
+
+        float reward = 0f;
+
+        // Example reward: encourage higher velocity
+        float currentVelocity = rb.velocity.magnitude;
+        float targetVelocity = 10f; // Define your desired target velocity
+        float velocityReward = currentVelocity / targetVelocity; // Normalize the velocity
+        reward += velocityReward;
+
+        // Example penalty: discourage collisions
+        if (rb.velocity.magnitude < 1f)
+        {
+            reward -= 1f;
+        }
+
+        return reward;
+    }
+
 
     public void HandleMotor()
     {
