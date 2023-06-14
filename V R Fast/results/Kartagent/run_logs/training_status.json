@@ -2,22 +2,22 @@
     "CarAgentTraining": {
         "checkpoints": [
             {
-                "steps": 398145,
-                "file_path": "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-398145.onnx",
-                "reward": -1.0523450207710265,
-                "creation_time": 1686756279.0292406,
+                "steps": 88603,
+                "file_path": "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-88603.onnx",
+                "reward": -0.9984459985386241,
+                "creation_time": 1686756673.7803466,
                 "auxillary_file_paths": [
-                    "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-398145.pt"
+                    "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-88603.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 398145,
+            "steps": 88603,
             "file_path": "results\\Kartagent\\CarAgentTraining.onnx",
-            "reward": -1.0523450207710265,
-            "creation_time": 1686756279.0292406,
+            "reward": -0.9984459985386241,
+            "creation_time": 1686756673.7803466,
             "auxillary_file_paths": [
-                "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-398145.pt"
+                "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-88603.pt"
             ]
         }
     },
