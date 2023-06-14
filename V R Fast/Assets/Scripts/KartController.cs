@@ -51,13 +51,17 @@ public class KartController : MonoBehaviour
       
       steeringWheel.localEulerAngles = new Vector3(-25, 90, ((input * 45)));
    }
-   
-   public void Respawn()
+
+  
+    public void Respawn()
    {
-      Vector3 pos = _spawnPointManager.SelectRandomSpawnpoint();
-      sphere.MovePosition(pos);
-      transform.position = pos - new Vector3(0, 0.4f, 0);
-   }
+        Vector3 pos = _spawnPointManager.SelectRandomSpawnpoint();
+        sphere.MovePosition(pos);
+        transform.position = pos - new Vector3(0, 0.4f, 0);
+
+        Quaternion customRotation = Quaternion.Euler(0, 240, 0); // Change the values to your desired rotation
+        transform.rotation = customRotation;
+    }
    
    public void FixedUpdate()
    {

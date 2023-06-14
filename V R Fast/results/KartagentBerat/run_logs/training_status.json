@@ -1,0 +1,47 @@
+{
+    "CarAgentTraining": {
+        "checkpoints": [
+            {
+                "steps": 499963,
+                "file_path": "results\\KartagentBerat\\CarAgentTraining\\CarAgentTraining-499963.onnx",
+                "reward": -1.0,
+                "creation_time": 1686763448.7204416,
+                "auxillary_file_paths": [
+                    "results\\KartagentBerat\\CarAgentTraining\\CarAgentTraining-499963.pt"
+                ]
+            },
+            {
+                "steps": 999967,
+                "file_path": "results\\KartagentBerat\\CarAgentTraining\\CarAgentTraining-999967.onnx",
+                "reward": -0.997802197933197,
+                "creation_time": 1686764807.666206,
+                "auxillary_file_paths": [
+                    "results\\KartagentBerat\\CarAgentTraining\\CarAgentTraining-999967.pt"
+                ]
+            },
+            {
+                "steps": 1368931,
+                "file_path": "results\\KartagentBerat\\CarAgentTraining\\CarAgentTraining-1368931.onnx",
+                "reward": -0.9849906200315894,
+                "creation_time": 1686765844.0065372,
+                "auxillary_file_paths": [
+                    "results\\KartagentBerat\\CarAgentTraining\\CarAgentTraining-1368931.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1368931,
+            "file_path": "results\\KartagentBerat\\CarAgentTraining.onnx",
+            "reward": -0.9849906200315894,
+            "creation_time": 1686765844.0065372,
+            "auxillary_file_paths": [
+                "results\\KartagentBerat\\CarAgentTraining\\CarAgentTraining-1368931.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

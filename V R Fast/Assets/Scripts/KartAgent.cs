@@ -50,7 +50,7 @@ public class KartAgent : Agent
 
         if (collision.collider.CompareTag("Wall"))
         {
-            AddReward(-0.05f);
+            AddReward(-0.10f);
             print(GetCumulativeReward());
         }
     }

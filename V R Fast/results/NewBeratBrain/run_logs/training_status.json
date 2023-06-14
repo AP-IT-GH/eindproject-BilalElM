@@ -1,0 +1,29 @@
+{
+    "CarAgentTraining": {
+        "checkpoints": [
+            {
+                "steps": 3414,
+                "file_path": "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-3414.onnx",
+                "reward": -1.001562500372529,
+                "creation_time": 1686769994.3810482,
+                "auxillary_file_paths": [
+                    "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-3414.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3414,
+            "file_path": "results\\NewBeratBrain\\CarAgentTraining.onnx",
+            "reward": -1.001562500372529,
+            "creation_time": 1686769994.3810482,
+            "auxillary_file_paths": [
+                "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-3414.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

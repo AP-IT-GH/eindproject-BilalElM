@@ -52,7 +52,7 @@ public class CheckpointManager : MonoBehaviour
 
         if (CurrentCheckpointIndex >= Checkpoints.Count)
         {
-            kartAgent.AddReward(1f);
+            kartAgent.AddReward(1.1f);
             kartAgent.EndEpisode();
         }
         else
