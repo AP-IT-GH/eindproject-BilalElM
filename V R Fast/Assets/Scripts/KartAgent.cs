@@ -51,8 +51,7 @@ public class KartAgent : Agent
         if (collision.collider.CompareTag("Wall"))
         {
             AddReward(-0.05f);
-            Debug.Log("Wall collision detected!"); // Add this line
-            Debug.Log(GetCumulativeReward()); // Add this line
+            print(GetCumulativeReward());
         }
     }
 
