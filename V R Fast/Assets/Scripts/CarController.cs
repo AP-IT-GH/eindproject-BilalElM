@@ -5,7 +5,7 @@ using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 
-public class CarController : Agent  
+public class CarController : MonoBehaviour  
 {
     private const string HORIZONTAL = "Horizontal";
     private const string VERTICAL = "Vertical";
@@ -105,7 +105,7 @@ public class CarController : Agent
     private void RotateWheel()
     {
         float wheelRotation = horizontalInput * rotationSpeed * Time.deltaTime;
-        GameObject wheelObject = GameObject.Find("sport_car_1_steering_wheel");
+        GameObject wheelObject = GameObject.Find("SteeringWheel");
 
         if (wheelObject != null)
         {

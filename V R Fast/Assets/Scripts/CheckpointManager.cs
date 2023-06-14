@@ -57,7 +57,7 @@ public class CheckpointManager : MonoBehaviour
         }
         else
         {
-            kartAgent.AddReward((0.5f) / Checkpoints.Count);
+            kartAgent.AddReward((0.8f) / Checkpoints.Count);
             SetNextCheckpoint();
         }
     }

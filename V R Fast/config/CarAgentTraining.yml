@@ -22,12 +22,12 @@ behaviors:
       ##imitation learning with gail
       gail:
         gamma: 0.99
-        strength: 1.0
+        strength: 0.5
         demo_path: "C:/eindproject-V-R_Fast/V R Fast/Demos/KartAgentDemo_1.demo"
       #imitation learning with behavioral_cloning
-    behavioral_cloning:
-      strength: 1.0
-      demo_path: "C:/eindproject-V-R_Fast/V R Fast/Demos/KartAgentDemo_1.demo"
+    # behavioral_cloning:
+    #   strength: 0.5
+    #   demo_path: "C:/eindproject-V-R_Fast/V R Fast/Demos/KartAgentDemo_1.demo"
     keep_checkpoints: 5
     max_steps: 500000000
     time_horizon: 1000

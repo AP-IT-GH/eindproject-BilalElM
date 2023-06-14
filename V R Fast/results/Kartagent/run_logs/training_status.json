@@ -2,40 +2,22 @@
     "CarAgentTraining": {
         "checkpoints": [
             {
-                "steps": 499658,
-                "file_path": "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-499658.onnx",
-                "reward": 1.4935897961258888,
-                "creation_time": 1686739254.356872,
+                "steps": 398145,
+                "file_path": "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-398145.onnx",
+                "reward": -1.0523450207710265,
+                "creation_time": 1686756279.0292406,
                 "auxillary_file_paths": [
-                    "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-499658.pt"
-                ]
-            },
-            {
-                "steps": 999456,
-                "file_path": "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-999456.onnx",
-                "reward": 1.4935897911588352,
-                "creation_time": 1686740037.0247712,
-                "auxillary_file_paths": [
-                    "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-999456.pt"
-                ]
-            },
-            {
-                "steps": 1186253,
-                "file_path": "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-1186253.onnx",
-                "reward": null,
-                "creation_time": 1686740335.073615,
-                "auxillary_file_paths": [
-                    "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-1186253.pt"
+                    "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-398145.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 1186253,
+            "steps": 398145,
             "file_path": "results\\Kartagent\\CarAgentTraining.onnx",
-            "reward": null,
-            "creation_time": 1686740335.073615,
+            "reward": -1.0523450207710265,
+            "creation_time": 1686756279.0292406,
             "auxillary_file_paths": [
-                "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-1186253.pt"
+                "results\\Kartagent\\CarAgentTraining\\CarAgentTraining-398145.pt"
             ]
         }
     },
