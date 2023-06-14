@@ -25,7 +25,7 @@ public class KartAgent : Agent
    {
       Vector3 diff = _checkpointManager.nextCheckPointToReach.transform.position - transform.position;
       sensor.AddObservation(diff / 20f);
-      AddReward(-0.001f);
+      //AddReward(-0.001f);
    }
 
    public override void OnActionReceived(ActionBuffers actions)
@@ -45,4 +45,16 @@ public class KartAgent : Agent
       continousActions[0] = Input.GetAxis("Horizontal");
       continousActions[1] = Input.GetKey(KeyCode.W) ? 1f : 0f;
    }
+    private void OnCollisionEnter(Collision collision)
+    {
+
+        if (collision.collider.CompareTag("Wall"))
+        {
+            AddReward(-0.05f);
+            Debug.Log("Wall collision detected!"); // Add this line
+            Debug.Log(GetCumulativeReward()); // Add this line
+        }
+    }
+
 }
+

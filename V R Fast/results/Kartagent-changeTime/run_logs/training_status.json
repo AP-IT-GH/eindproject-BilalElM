@@ -1,0 +1,29 @@
+{
+    "CarAgentTraining": {
+        "checkpoints": [
+            {
+                "steps": 5421,
+                "file_path": "results\\Kartagent-changeTime\\CarAgentTraining\\CarAgentTraining-5421.onnx",
+                "reward": -0.9999365322660692,
+                "creation_time": 1686742837.5342047,
+                "auxillary_file_paths": [
+                    "results\\Kartagent-changeTime\\CarAgentTraining\\CarAgentTraining-5421.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5421,
+            "file_path": "results\\Kartagent-changeTime\\CarAgentTraining.onnx",
+            "reward": -0.9999365322660692,
+            "creation_time": 1686742837.5342047,
+            "auxillary_file_paths": [
+                "results\\Kartagent-changeTime\\CarAgentTraining\\CarAgentTraining-5421.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
