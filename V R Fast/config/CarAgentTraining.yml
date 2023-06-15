@@ -18,7 +18,7 @@ behaviors:
     reward_signals:
       extrinsic:
         gamma: 0.99
-        strength: 1.0
+        strength: 0.5
       ##imitation learning with gail
       gail:
         gamma: 0.99

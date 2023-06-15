@@ -1,0 +1,56 @@
+{
+    "CarAgentTraining": {
+        "checkpoints": [
+            {
+                "steps": 499774,
+                "file_path": "results\\MuzanArc\\CarAgentTraining\\CarAgentTraining-499774.onnx",
+                "reward": 0.9367088476816813,
+                "creation_time": 1686791219.8055856,
+                "auxillary_file_paths": [
+                    "results\\MuzanArc\\CarAgentTraining\\CarAgentTraining-499774.pt"
+                ]
+            },
+            {
+                "steps": 999748,
+                "file_path": "results\\MuzanArc\\CarAgentTraining\\CarAgentTraining-999748.onnx",
+                "reward": 0.7770569548010826,
+                "creation_time": 1686792045.5895145,
+                "auxillary_file_paths": [
+                    "results\\MuzanArc\\CarAgentTraining\\CarAgentTraining-999748.pt"
+                ]
+            },
+            {
+                "steps": 1499915,
+                "file_path": "results\\MuzanArc\\CarAgentTraining\\CarAgentTraining-1499915.onnx",
+                "reward": 1.1554148958788977,
+                "creation_time": 1686793182.2862003,
+                "auxillary_file_paths": [
+                    "results\\MuzanArc\\CarAgentTraining\\CarAgentTraining-1499915.pt"
+                ]
+            },
+            {
+                "steps": 1784112,
+                "file_path": "results\\MuzanArc\\CarAgentTraining\\CarAgentTraining-1784112.onnx",
+                "reward": null,
+                "creation_time": 1686793833.3384993,
+                "auxillary_file_paths": [
+                    "results\\MuzanArc\\CarAgentTraining\\CarAgentTraining-1784112.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1784112,
+            "file_path": "results\\MuzanArc\\CarAgentTraining.onnx",
+            "reward": null,
+            "creation_time": 1686793833.3384993,
+            "auxillary_file_paths": [
+                "results\\MuzanArc\\CarAgentTraining\\CarAgentTraining-1784112.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

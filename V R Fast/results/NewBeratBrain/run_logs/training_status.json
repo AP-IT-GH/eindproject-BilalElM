@@ -2,22 +2,58 @@
     "CarAgentTraining": {
         "checkpoints": [
             {
-                "steps": 3414,
-                "file_path": "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-3414.onnx",
-                "reward": -1.001562500372529,
-                "creation_time": 1686769994.3810482,
+                "steps": 499142,
+                "file_path": "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-499142.onnx",
+                "reward": 0.00470086932182312,
+                "creation_time": 1686771100.3401299,
                 "auxillary_file_paths": [
-                    "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-3414.pt"
+                    "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-499142.pt"
+                ]
+            },
+            {
+                "steps": 999156,
+                "file_path": "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-999156.onnx",
+                "reward": 0.4897436698277791,
+                "creation_time": 1686771642.1777227,
+                "auxillary_file_paths": [
+                    "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-999156.pt"
+                ]
+            },
+            {
+                "steps": 1499059,
+                "file_path": "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-1499059.onnx",
+                "reward": -0.21025633811950684,
+                "creation_time": 1686772184.9430637,
+                "auxillary_file_paths": [
+                    "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-1499059.pt"
+                ]
+            },
+            {
+                "steps": 1999814,
+                "file_path": "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-1999814.onnx",
+                "reward": 0.5690336044018085,
+                "creation_time": 1686772738.521585,
+                "auxillary_file_paths": [
+                    "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-1999814.pt"
+                ]
+            },
+            {
+                "steps": 2396932,
+                "file_path": "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-2396932.onnx",
+                "reward": null,
+                "creation_time": 1686773163.11311,
+                "auxillary_file_paths": [
+                    "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-2396932.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 3414,
+            "steps": 2396932,
             "file_path": "results\\NewBeratBrain\\CarAgentTraining.onnx",
-            "reward": -1.001562500372529,
-            "creation_time": 1686769994.3810482,
+            "reward": null,
+            "creation_time": 1686773163.11311,
             "auxillary_file_paths": [
-                "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-3414.pt"
+                "results\\NewBeratBrain\\CarAgentTraining\\CarAgentTraining-2396932.pt"
             ]
         }
     },

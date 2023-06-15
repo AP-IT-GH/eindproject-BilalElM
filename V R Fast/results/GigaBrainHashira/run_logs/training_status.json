@@ -1,0 +1,65 @@
+{
+    "CarAgentTraining": {
+        "checkpoints": [
+            {
+                "steps": 6999744,
+                "file_path": "results\\GigaBrainHashira\\CarAgentTraining\\CarAgentTraining-6999744.onnx",
+                "reward": 0.13639239072799683,
+                "creation_time": 1686788141.794724,
+                "auxillary_file_paths": [
+                    "results\\GigaBrainHashira\\CarAgentTraining\\CarAgentTraining-6999744.pt"
+                ]
+            },
+            {
+                "steps": 7499838,
+                "file_path": "results\\GigaBrainHashira\\CarAgentTraining\\CarAgentTraining-7499838.onnx",
+                "reward": 0.0009250503319960374,
+                "creation_time": 1686788725.0438116,
+                "auxillary_file_paths": [
+                    "results\\GigaBrainHashira\\CarAgentTraining\\CarAgentTraining-7499838.pt"
+                ]
+            },
+            {
+                "steps": 7999151,
+                "file_path": "results\\GigaBrainHashira\\CarAgentTraining\\CarAgentTraining-7999151.onnx",
+                "reward": 0.6522943079471588,
+                "creation_time": 1686789296.2329895,
+                "auxillary_file_paths": [
+                    "results\\GigaBrainHashira\\CarAgentTraining\\CarAgentTraining-7999151.pt"
+                ]
+            },
+            {
+                "steps": 8499974,
+                "file_path": "results\\GigaBrainHashira\\CarAgentTraining\\CarAgentTraining-8499974.onnx",
+                "reward": null,
+                "creation_time": 1686789871.93118,
+                "auxillary_file_paths": [
+                    "results\\GigaBrainHashira\\CarAgentTraining\\CarAgentTraining-8499974.pt"
+                ]
+            },
+            {
+                "steps": 8598621,
+                "file_path": "results\\GigaBrainHashira\\CarAgentTraining\\CarAgentTraining-8598621.onnx",
+                "reward": null,
+                "creation_time": 1686789977.1140647,
+                "auxillary_file_paths": [
+                    "results\\GigaBrainHashira\\CarAgentTraining\\CarAgentTraining-8598621.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 8598621,
+            "file_path": "results\\GigaBrainHashira\\CarAgentTraining.onnx",
+            "reward": null,
+            "creation_time": 1686789977.1140647,
+            "auxillary_file_paths": [
+                "results\\GigaBrainHashira\\CarAgentTraining\\CarAgentTraining-8598621.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
